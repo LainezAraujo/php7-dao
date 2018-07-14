@@ -1,8 +1,10 @@
 <?php 
 
-/*require_once("config.php");
+
+require_once("config.php");
+
 //TODOS USUARIOS
-$sql = new Sql();
+/*$sql = new Sql();
 $usuario = $sql-> select("SELECT * FROM tb_usuario");
 echo json_encode($usuario);
 */
@@ -27,9 +29,9 @@ $usuario->login("root","123456");
 echo $usuario;*/
 
 //INSERT 
-/*$aluno = new Usuario("aluno","@345");
+$aluno = new Usuario("aluno","@lun@");
 $aluno-> insert();
-echo $aluno;*/
+echo $aluno;
 
 //UPDATE
 /*$usuario = new Usuario();
@@ -39,10 +41,10 @@ echo $usuario;*/
 
 //DELETE
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario ->loadbyId(1);
 $usuario->delete();
 echo $usuario;
-
+*/
 
  ?>
