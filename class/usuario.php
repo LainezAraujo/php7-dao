@@ -92,7 +92,7 @@ class Usuario{
 	//CRIAR USUARIO NOVO INSERT
 	public function insert(){
 		$sql = new Sql();
-		//SQL SERVER UTILIZA EXECUTE AO INVES DE CALL
+		//SQL SERVER UTILIZA EXECUTE AO INVES DE CALL PROCEDURE
 		$results = $sql ->select ("CALL sp_usuario_insert(:LOGIN, :PASSWORD)",array(
 			':LOGIN'=>$this->getDeslogin(),
 			':PASSWORD'=>$this->getDessenha()
